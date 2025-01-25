@@ -1,11 +1,14 @@
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --background-color: #ffffff;
-    --text-color: #1f2937;
-    --light-gray: #f3f4f6;
-    --border-color: #e5e7eb;
+    --primary-color: #60a5fa;
+    --secondary-color: #3b82f6;
+    --background-color: #111827;
+    --text-color: #e5e7eb;
+    --dark-gray: #1f2937;
+    --light-gray: #374151;
+    --border-color: #4b5563;
     --success-color: #10b981;
+    --card-bg: #1f2937;
+    --hover-color: #2563eb;
 }
 
 * {
@@ -18,6 +21,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 .container {
@@ -28,8 +32,8 @@ body {
 
 /* Header & Navigation */
 header {
-    background-color: var(--background-color);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: var(--dark-gray);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     position: fixed;
     width: 100%;
     top: 0;
@@ -80,19 +84,19 @@ nav .container {
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: var(--text-color);
+    background-color: var(--light-gray);
     color: white !important;
     border-radius: 6px;
 }
 
 .github-link:hover {
-    background-color: #000000;
+    background-color: var(--hover-color);
 }
 
 /* Hero Section */
 .hero {
     padding: 8rem 0 4rem;
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%);
     color: white;
     text-align: center;
 }
@@ -111,7 +115,7 @@ nav .container {
 /* Tools Section */
 .tools {
     padding: 4rem 0;
-    background-color: var(--light-gray);
+    background-color: var(--dark-gray);
 }
 
 .tools h2 {
@@ -127,11 +131,11 @@ nav .container {
 }
 
 .tool-card {
-    background: white;
+    background: var(--card-bg);
     border-radius: 10px;
     padding: 2rem;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
 }
 
@@ -152,7 +156,7 @@ nav .container {
 
 .tool-card p {
     margin-bottom: 1.5rem;
-    color: #666;
+    color: #9ca3af;
 }
 
 .tool-links {
@@ -170,7 +174,7 @@ nav .container {
 }
 
 .tool-button:not(.secondary) {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
 }
 
@@ -180,12 +184,13 @@ nav .container {
 }
 
 .tool-button:hover {
-    opacity: 0.9;
+    background-color: var(--hover-color);
 }
 
 /* About Section */
 .about {
     padding: 4rem 0;
+    background-color: var(--background-color);
 }
 
 .about h2 {
@@ -218,7 +223,7 @@ nav .container {
 /* Contribute Section */
 .contribute {
     padding: 4rem 0;
-    background-color: var(--light-gray);
+    background-color: var(--dark-gray);
     text-align: center;
 }
 
@@ -250,7 +255,7 @@ nav .container {
     height: 40px;
     line-height: 40px;
     border-radius: 50%;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
     margin-bottom: 1rem;
 }
@@ -258,7 +263,7 @@ nav .container {
 .cta-button {
     display: inline-block;
     padding: 1rem 2rem;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -267,14 +272,15 @@ nav .container {
 }
 
 .cta-button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--hover-color);
 }
 
 /* Footer */
 footer {
-    background-color: var(--text-color);
+    background-color: var(--dark-gray);
     color: white;
     padding: 4rem 0 2rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .footer-content {
@@ -317,7 +323,7 @@ footer {
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid var(--border-color);
 }
 
 /* Responsive Design */

@@ -11,10 +11,10 @@ OpenGNSSTools is a platform dedicated to creating simple and practical web appli
 
 ## 🛠 Our Applications
 
-### Julian Day Calculator
-A straightforward tool for converting calendar dates to Julian Day Numbers, GPS Week Numbers, and more.
+### GNSSCalendar
+A user-friendly calendar tool that provides detailed GNSS time information, including Julian Day Numbers, GPS Week Numbers, and more, for any selected date.
 
-[Try it out!](#) | [Source Code](#)
+[Try it out!](https://opengnsstools.github.io/GNSSCalendar) | [Source Code](https://github.com/OpenGNSSTools/GNSSCalendar)
 
 *More tools coming soon...*
 
